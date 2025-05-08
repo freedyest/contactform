@@ -1,0 +1,38 @@
+<html>
+<head>
+<title>Digital guestForm</title>
+<link rel="stylesheet" href="contact.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+<body>
+  <div class="maincontainer">
+  <div class="formkontainer">
+  <h1>Buku Tamu Digital</h1>
+  <form class="formguest" id="guestForm">
+    <input type="text" id="name" placeholder="Nama" />
+    <small class="error" id="error-name"></small>
+    
+    <input type="email" id="email" placeholder="Email" />
+    <small class="error" id="error-email"></small>
+    
+    <input type="date" id="date" />
+    <small class="error" id="error-date"></small>
+    
+    <textarea id="message" placeholder="Pesan"></textarea>
+    <small class="error" id="error-message"></small>
+    
+    <button type="submit"  id="submit">Kirim</button>
+  </form>
+</div>
+  <div class="listtamu">
+  <h2>Daftar Tamu</h2>
+  <div class="guestlistcontainer" id="guestlistcontainer">
+  </div>
+  <button class="clearList" id="clearList">Hapus Semua Tamu</button>
+
+ 
+</div>
+<script src="contact.js"></script>
+</body>
+</html>
